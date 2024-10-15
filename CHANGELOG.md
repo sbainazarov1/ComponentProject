@@ -75,6 +75,20 @@ the following form: YYYY.0M.0D.
 - Designed a Housing component
 - Designed a RPG Statistics component
 
+## [2024.10.15]
+
+### Added
+
+- Designed a proof of concept for EcologySurvey component
+
+### Updated
+
+- Species subclass
+- Internal representations to include:
+  speciesCount Map, area double, and total species int
+- Kenrel Methods: addSpecies(), setCount(), getSpecies()
+- Methods: setCoordinates(), getStatus()
+
 [unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
 [2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
 [2024.01.07]: https://github.com/jrg94/portfolio-project/releases/tag/v2024.01.07
