@@ -100,6 +100,17 @@ do good work.
 > to create a new design. In you do end up picking one at random, you should
 > disclose that here as well.
 
+The rpg component was my second option. I would like to do something like
+the housing component one day. But it may require more research and better/more
+specific application.
+For the eco component, I have a good idea for layering using a species sub class
+and desired density.
+Also I have a desire to try and work in the Ecology field. So this could be a
+a good way to start conceptualizing how that can work. If I have enough time, I
+can try to apply higher level (mid level) statistical analysis.
+This could also give a lot of opportunity for improving this design after
+I garduate.
+
 > Once you've argued your choice of design, make a branch in your new repo called
 > something like `proof-of-concept`. There are many ways to do this, but my
 > preference is to use GitHub Desktop. From there, you can click the `Branch`
