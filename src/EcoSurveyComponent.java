@@ -22,6 +22,8 @@ public class EcoSurveyComponent {
          */
         private double density;
 
+        //private int count;
+
     }
 
     //is this redundant. Should I just create another private field for count?
@@ -29,7 +31,7 @@ public class EcoSurveyComponent {
 
     private double area;
 
-    private int totalSpecies;
+    //private int totalSpecies;
 
     private void createNewRep() {
         this.totalSpecies = 0;
@@ -55,7 +57,8 @@ public class EcoSurveyComponent {
 
     //I think this is a kernel function. I do want client to use it.
     //Is it ok if it accesses fields/representation.
-    private void addSpecies(String name, String trueName, double density) {
+    //make public
+    public void addSpecies(String name, String trueName, double density) {
         assert !this.hasSpecies(name) : "Violation of species does not exist";
 
         Species s1 = new Species();
@@ -63,19 +66,25 @@ public class EcoSurveyComponent {
         s1.trueName = trueName;
         s1.density = density;
         this.speciesCount.add(s1, 0);
-        this.totalSpecies++;
+        //this.totalSpecies++;
     }
 
     //kernel. Should these methods be public?
-    private void setCount(String name, int count) {
+    public void setCount(String name, int count) {
         assert this.hasSpecies(name) : "Violation of species exists";
 
         Species s1 = this.getSpecies(name);
         this.speciesCount.replaceValue(s1, count);
+        //s1.count = count;
 
     }
 
+    //getDensity(String speciesName)
+    //getCount(String speciesName)
+    //setDensity(String speciesName)
+    //setCount(String speciesName)
     private Species getSpecies(String name) {
+        //getKey();
         assert this.hasSpecies(name) : "Violation of species exists";
 
         Species s1 = new Species();
@@ -88,6 +97,7 @@ public class EcoSurveyComponent {
         return s1;
     }
 
+    //kernel
     private void setCoordinates(double a, double b, double c, double d) {
         //double four = 4d;
         this.area = (a + b + c + d) / 4;
@@ -100,6 +110,8 @@ public class EcoSurveyComponent {
          */
     }
 
+    //only secondary method
+    //expand
     public String getStatus(String name) {
         Species s1 = this.getSpecies(name);
         int count = this.speciesCount.value(s1);
