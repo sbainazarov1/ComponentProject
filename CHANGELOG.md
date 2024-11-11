@@ -8,6 +8,28 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2024.10.15]
+
+### Added
+
+- Designed a proof of concept for EcologySurvey component
+
+### Updated
+
+- Species subclass
+- Internal representations to include:
+  speciesCount Map, area double, and total species int
+- Kenrel Methods: addSpecies(), setCount(), getSpecies()
+- Methods: setCoordinates(), getStatus()
+
+## [2024.09.16]
+
+### Added
+
+- Designed a Ecology Survey component
+- Designed a Housing component
+- Designed a RPG Statistics component
+
 ## [2024.08.07]
 
 ### Added
@@ -66,14 +88,6 @@ the following form: YYYY.0M.0D.
 - Created a README at the root to explain how to use the template repo
 - Created initial drafts of the six portfolio assessments
 - Added READMEs to key folders like `test` and `lib` to explain their purpose
-
-## [2024.09.16]
-
-### Added
-
-- Designed a Ecology Survey component
-- Designed a Housing component
-- Designed a RPG Statistics component
 
 [unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
 [2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
