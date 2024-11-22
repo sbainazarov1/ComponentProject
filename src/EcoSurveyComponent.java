@@ -6,6 +6,9 @@ import components.simplewriter.SimpleWriter;
 import components.simplewriter.SimpleWriter1L;
 
 public class EcoSurveyComponent {
+    public final record Species(String name, String trueName, double density) {
+    }
+
     private final class Species {
 
         //Should these fields be public?

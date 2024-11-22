@@ -8,6 +8,19 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2024.11.21]
+
+### Added
+
+- Created EcoSurveyKernel Interface
+- Created EcoSurvey Interface
+
+### Updated
+
+- Species record object
+- New secondary functions: topSpecies(), lowSpecies(), ecoStatus(), status()
+- Refined kernel functions
+
 ## [2024.10.15]
 
 ### Added
